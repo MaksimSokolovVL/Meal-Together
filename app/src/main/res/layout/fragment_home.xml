@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mealtogether.home.presentation.view.HomeFragment">
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_list"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@id/menu"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:listitem="@layout/view_item_shape"
+    android:orientation="vertical"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    />
+<!--    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--    tools:listitem="@layout/item_shop_enabled"-->
+
+    <include
+        android:id="@+id/menu"
+        layout="@layout/bottom_navigation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

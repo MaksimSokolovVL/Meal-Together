@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bottom_nav_title_home">Home</string>
+    <string name="bottom_nav_food_todo">Food ToDo</string>
+    <string name="bottom_nav_menu">Menu</string>
+    <string name="bottom_nav_social">Social</string>
+</resources>
